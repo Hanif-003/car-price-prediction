@@ -9,12 +9,15 @@ Accurately predicting the price of used cars is crucial for both buyers and sell
 ## Project Overview
 
 **Problem Statement** : Predict the selling price of a car based on car features.
+
 **Dataset**           : Data set Collected from kaggle.Contains attributes like Name ,Year,Km_driven,fuel_type,seller_type,Transmission,Owner,Mileage,Engine,Max_power,Seats.
+
 **Model Used**        : Random Forest
+
 **Tools**             : Python, Pandas, Scikit-learn, Matplotlib, Seaborn, Jupyter Notebook ,Visual Studio Code.
 
 ## Model Performance
 
-**Algorithm Used** : Linear Regression / Random Forest
-**R² Score** : 0.98
+**Algorithm Used** : Random Forest
+**R² Score**       : 0.98
 
