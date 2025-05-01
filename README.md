@@ -10,7 +10,7 @@ Accurately predicting the price of used cars is crucial for both buyers and sell
 
 **Problem Statement** : Predict the selling price of a car based on car features.
 
-**Dataset**           : Data set Collected from kaggle.Contains attributes like Name ,Year,Km_driven,fuel_type,seller_type,Transmission,Owner,Mileage,Engine,Max_power,Seats.
+**Dataset**           : Data set Collected from kaggle.Contains attributes like Name,Year,Km_driven,fuel_type,seller_type,Transmission,Owner,Mileage,Engine,Max_power,Seats.
 
 **Model Used**        : Random Forest
 
@@ -21,6 +21,10 @@ Accurately predicting the price of used cars is crucial for both buyers and sell
 **Algorithm Used** : Random Forest
 
 **R² Score**       : 0.98
+
+##Before data cleaning
+
+![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/before_cleaning.png?raw=true)
 
 ## How to enter values
 
