@@ -30,3 +30,5 @@ Accurately predicting the price of used cars is crucial for both buyers and sell
 
 ![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/3.png?raw=true)
 
+![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/output.png?raw=true)
+
