@@ -16,12 +16,6 @@ Accurately predicting the price of used cars is crucial for both buyers and sell
 
 **Tools**             : Python, Pandas, Scikit-learn, Matplotlib, Seaborn, Jupyter Notebook ,Visual Studio Code.
 
-## Model Performance
-
-**Algorithm Used** : Random Forest
-
-**R² Score**       : 0.98
-
 ## Before data cleaning
 
 ![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/before_cleaning.png?raw=true)
@@ -29,6 +23,16 @@ Accurately predicting the price of used cars is crucial for both buyers and sell
 ## After data cleaning
 
 ![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/After_cleaning.png?raw=true)
+
+## Model Performance
+
+**Algorithm Used** : Random Forest
+
+**R² Score**       : 0.98
+
+## Actual vs predict
+
+![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/Actual%20vs%20Predict.png?raw=true)
 
 ## How to enter values
 
