@@ -22,9 +22,13 @@ Accurately predicting the price of used cars is crucial for both buyers and sell
 
 **R² Score**       : 0.98
 
-##Before data cleaning
+## Before data cleaning
 
 ![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/before_cleaning.png?raw=true)
+
+## After data cleaning
+
+![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/After_cleaning.png?raw=true)
 
 ## How to enter values
 
