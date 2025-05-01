@@ -19,5 +19,10 @@ Accurately predicting the price of used cars is crucial for both buyers and sell
 ## Model Performance
 
 **Algorithm Used** : Random Forest
+
 **R² Score**       : 0.98
+
+## How to enter values
+
+![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/intro.png?raw=true)
 
