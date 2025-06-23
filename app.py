@@ -27,7 +27,7 @@ transmission_mapping = {'Manual': 1, 'Automatic': 2}
 owner_mapping = {'First Owner': 1,'Second Owner': 2,'Third Owner': 3, 'Fourth & Above Owner': 4,'Test Drive Car': 5}
 
 # Inputs
-name = st.selectbox("Brand", list(name_mapping.keys()))
+name = st.selectbox("name", list(name_mapping.keys()))
 year = st.number_input("Year", min_value=1990, max_value=2025, value=2015)
 km_driven = st.number_input("Kilometers Driven", min_value=0, value=30000)
 fuel = st.selectbox("Fuel Type", list(fuel_mapping.keys()))
@@ -40,7 +40,7 @@ max_power = st.number_input("Max Power (bhp)", min_value=20.0, max_value=300.0, 
 seats = st.selectbox("Number of Seats", [2, 4, 5, 6, 7, 8, 9, 10])
 
 # Encode categorical values
-name_encoded = brand_mapping[brand]
+name_encoded = name_mapping[name]
 fuel_encoded = fuel_mapping[fuel]
 seller_type_encoded = seller_type_mapping[seller_type]
 transmission_encoded = transmission_mapping[transmission]
