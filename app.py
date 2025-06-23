@@ -18,25 +18,13 @@ brand_mapping = {
     'Opel': 30, 'Others': 31
 }
 
-fuel_mapping = {
-    'Petrol': 1, 'Diesel': 2, 'CNG': 3, 'LPG': 4, 'Electric': 5
-}
+#fuel_mapping = {'Petrol': 1, 'Diesel': 2, 'CNG': 3, 'LPG': 4, 'Electric': 5}
 
-seller_type_mapping = {
-    'Individual': 1, 'Dealer': 2, 'Trustmark Dealer': 3
-}
+#seller_type_mapping = {'Individual': 1, 'Dealer': 2, 'Trustmark Dealer': 3}
 
-transmission_mapping = {
-    'Manual': 1, 'Automatic': 2
-}
+#transmission_mapping = {'Manual': 1, 'Automatic': 2}
 
-owner_mapping = {
-    'First Owner': 1,
-    'Second Owner': 2,
-    'Third Owner': 3,
-    'Fourth & Above Owner': 4,
-    'Test Drive Car': 5
-}
+#owner_mapping = {'First Owner': 1,'Second Owner': 2,'Third Owner': 3, 'Fourth & Above Owner': 4,'Test Drive Car': 5}
 
 # Inputs
 brand = st.selectbox("Brand", list(brand_mapping.keys()))
@@ -53,10 +41,20 @@ seats = st.selectbox("Number of Seats", [2, 4, 5, 6, 7, 8, 9, 10])
 
 # Encode categorical values
 brand_encoded = brand_mapping[brand]
-fuel_encoded = fuel_mapping[fuel]
-seller_type_encoded = seller_type_mapping[seller_type]
-transmission_encoded = transmission_mapping[transmission]
-owner_encoded = owner_mapping[owner]
+#fuel_encoded = fuel_mapping[fuel]
+#seller_type_encoded = seller_type_mapping[seller_type]
+#transmission_encoded = transmission_mapping[transmission]
+#owner_encoded = owner_mapping[owner]
+
+
+# new code
+encoders = joblib.load("encoders.pkl")
+
+fuel_encoded = encoders['fuel'].transform([fuel])[0]
+seller_type_encoded = encoders['seller_type'].transform([seller_type])[0]
+transmission_encoded = encoders['transmission'].transform([transmission])[0]
+owner_encoded = encoders['owner'].transform([owner])[0]
+
 
 # Prepare DataFrame
 input_data = pd.DataFrame({
