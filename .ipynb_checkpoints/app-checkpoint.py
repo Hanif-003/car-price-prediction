@@ -15,25 +15,25 @@ brand_mapping = {
     'Audi': 15, 'Volkswagen': 16, 'BMW': 17, 'Nissan': 18, 'MG': 19,
     'Jaguar': 20, 'Daewoo': 21, 'Volvo': 22, 'Kia': 23, 'Fiat': 24,
     'Force': 25, 'Land': 26, 'Ambassador': 27, 'Ashok': 28, 'Isuzu': 29,
-    'Opel': 30
+    'Opel': 30, 'Others': 31
 }
 
-fuel_mapping = {'Petrol': 2, 'Diesel': 1, 'CNG': 4, 'LPG': 3}
+#fuel_mapping = {'Petrol': 1, 'Diesel': 2, 'CNG': 3, 'LPG': 4, 'Electric': 5}
 
-seller_type_mapping = {'Individual': 1, 'Dealer': 2, 'Trustmark Dealer': 3}
+#seller_type_mapping = {'Individual': 1, 'Dealer': 2, 'Trustmark Dealer': 3}
 
-transmission_mapping = {'Manual': 1, 'Automatic': 2}
+#transmission_mapping = {'Manual': 1, 'Automatic': 2}
 
-owner_mapping = {'First Owner': 1,'Second Owner': 2,'Third Owner': 3, 'Fourth & Above Owner': 4,'Test Drive Car': 5}
+#owner_mapping = {'First Owner': 1,'Second Owner': 2,'Third Owner': 3, 'Fourth & Above Owner': 4,'Test Drive Car': 5}
 
 # Inputs
 brand = st.selectbox("Brand", list(brand_mapping.keys()))
-year = st.number_input("Year", min_value=1990, max_value=2025, value=2015)
-km_driven = st.number_input("Kilometers Driven", min_value=0, value=30000)
 fuel = st.selectbox("Fuel Type", list(fuel_mapping.keys()))
 seller_type = st.selectbox("Seller Type", list(seller_type_mapping.keys()))
 transmission = st.selectbox("Transmission", list(transmission_mapping.keys()))
 owner = st.selectbox("Owner", list(owner_mapping.keys()))
+year = st.number_input("Year", min_value=1990, max_value=2025, value=2015)
+km_driven = st.number_input("Kilometers Driven", min_value=0, value=30000)
 mileage = st.number_input("Mileage (kmpl)", min_value=0.0, value=18.0)
 engine = st.number_input("Engine (CC)", min_value=500, max_value=5000, value=1197)
 max_power = st.number_input("Max Power (bhp)", min_value=20.0, max_value=300.0, value=83.0)
@@ -41,13 +41,19 @@ seats = st.selectbox("Number of Seats", [2, 4, 5, 6, 7, 8, 9, 10])
 
 # Encode categorical values
 brand_encoded = brand_mapping[brand]
-fuel_encoded = fuel_mapping[fuel]
-seller_type_encoded = seller_type_mapping[seller_type]
-transmission_encoded = transmission_mapping[transmission]
-owner_encoded = owner_mapping[owner]
+#fuel_encoded = fuel_mapping[fuel]
+#seller_type_encoded = seller_type_mapping[seller_type]
+#transmission_encoded = transmission_mapping[transmission]
+#owner_encoded = owner_mapping[owner]
 
 
+# new code
+encoders = joblib.load("encoders.pkl")
 
+fuel_encoded = encoders['fuel'].transform([fuel])[0]
+seller_type_encoded = encoders['seller_type'].transform([seller_type])[0]
+transmission_encoded = encoders['transmission'].transform([transmission])[0]
+owner_encoded = encoders['owner'].transform([owner])[0]
 
 
 # Prepare DataFrame
