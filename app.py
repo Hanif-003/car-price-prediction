@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 # Load trained model
-model = joblib.load("model.pkl")
+model = joblib.load("model.pk1")
 
 st.title("Car Price Prediction App 🚗")
 st.write("Fill in the details of the car below to predict its selling price.")
