@@ -10,7 +10,7 @@ This project is a machine learning web application that predicts the resale pric
 
 - Trained ML model (e.g., Random Forest Regressor)
 
-** Predicts car price based on: **
+**Predicts car price based on:**
 
 - Year of purchase
 
@@ -42,7 +42,7 @@ This project is a machine learning web application that predicts the resale pric
 `README.md`– Documentation for setup and usage
 
 # How to Run Locally
-''' bash
 
  `pip install -r requirements.txt`
+ 
  `streamlit run app.py`
