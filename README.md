@@ -1,46 +1,48 @@
-# Car Price Prediction using Machine Learning
+# 🚗 Car Price Prediction App
+This project is a machine learning web application that predicts the resale price of a car based on user input parameters. Built using Python, Streamlit, and scikit-learn, it provides a simple interface for real-time predictions.
 
-This project uses machine learning algorithms to predict the selling price of a car based on various features like year,Km_driven, fuel type, transmission, etc. It aims to help sellers and buyers understand the fair price of used cars.
+## Live Demo
 
-## Problem Statement
+[LIVE LINK]<https://hanif-003-car-price-prediction-app-5wzz0p.streamlit.app/>
 
-Accurately predicting the price of used cars is crucial for both buyers and sellers in the automobile market. This project builds a regression model that learns patterns from a historical dataset and provides price estimates for unseen data.
+## Features
+- Interactive and easy-to-use Streamlit web app
 
-## Project Overview
+- Trained ML model (e.g., Random Forest Regressor)
 
-**Problem Statement** : Predict the selling price of a car based on car features.
+- Predicts car price based on:
 
-**Dataset**           : Data set Collected from kaggle.Contains attributes like Name,Year,Km_driven,fuel_type,seller_type,Transmission,Owner,Mileage,Engine,Max_power,Seats.
+- Year of purchase
 
-**Model Used**        : Random Forest
+- Kilometers driven
 
-**Tools**             : Python, Pandas, Scikit-learn, Matplotlib, Seaborn, Jupyter Notebook ,Visual Studio Code.
+- Fuel type
 
-## Before data cleaning
+- Seller type
 
-![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/before_cleaning.png?raw=true)
+- Transmission
 
-## After data cleaning
+- Ownership history
 
-![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/After_cleaning.png?raw=true)
+- Engine capacity
 
-## Model Performance
+- Mileage
 
-**Algorithm Used** : Random Forest
+- Max power
 
-**R² Score**       : 0.98
+- Number of seats
 
-## Actual vs predict
+## 📁 Files in This Repository
+' app.py ' – Main Streamlit app script
 
-![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/Actual%20vs%20Predict.png?raw=true)
+' car_price_model.pkl ' – Pre-trained machine learning model
 
-## How to enter values
+' requirements.txt '– Required Python libraries
 
-![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/1.png?raw=true)
+' README.md ' – Documentation for setup and usage
 
-![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/2.png?raw=true)
+# How to Run Locally
+''' bash
 
-![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/3.png?raw=true)
-
-![Alt text](https://github.com/Hanif-003/car-price-prediction/blob/master/output.png?raw=true)
-
+- pip install -r requirements.txt
+- streamlit run app.py
