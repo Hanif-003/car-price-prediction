@@ -3,14 +3,14 @@ This project is a machine learning web application that predicts the resale pric
 
 ## Live Demo
 
-[LIVE LINK](https://hanif-003-car-price-prediction-app-5wzz0p.streamlit.app/)
+[CLICK HERE FOR LIVE LINK](https://hanif-003-car-price-prediction-app-5wzz0p.streamlit.app/)
 
 ## Features
 - Interactive and easy-to-use Streamlit web app
 
 - Trained ML model (e.g., Random Forest Regressor)
 
-- Predicts car price based on:
+** Predicts car price based on: **
 
 - Year of purchase
 
@@ -35,14 +35,14 @@ This project is a machine learning web application that predicts the resale pric
 ## 📁 Files in This Repository
 `app.py` – Main Streamlit app script
 
-` car_price_model.pkl ` – Pre-trained machine learning model
+ ` car_price_model.pkl ` – Pre-trained machine learning model
 
-' requirements.txt '– Required Python libraries
+`requirements.txt`– Required Python libraries
 
-' README.md ' – Documentation for setup and usage
+`README.md`– Documentation for setup and usage
 
 # How to Run Locally
 ''' bash
 
-- pip install -r requirements.txt
-- streamlit run app.py
+ `pip install -r requirements.txt`
+ `streamlit run app.py`
