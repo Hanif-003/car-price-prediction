@@ -3,7 +3,7 @@ This project is a machine learning web application that predicts the resale pric
 
 ## Live Demo
 
-[LIVE LINK]<https://hanif-003-car-price-prediction-app-5wzz0p.streamlit.app/>
+[LIVE LINK](https://hanif-003-car-price-prediction-app-5wzz0p.streamlit.app/)
 
 ## Features
 - Interactive and easy-to-use Streamlit web app
@@ -33,9 +33,9 @@ This project is a machine learning web application that predicts the resale pric
 - Number of seats
 
 ## 📁 Files in This Repository
-' app.py ' – Main Streamlit app script
+`app.py` – Main Streamlit app script
 
-' car_price_model.pkl ' – Pre-trained machine learning model
+` car_price_model.pkl ` – Pre-trained machine learning model
 
 ' requirements.txt '– Required Python libraries
 
